@@ -1,8 +1,8 @@
 import { styled } from "@mui/material/styles";
-import { IconButton } from "..";
+import { IconButton } from "../../mui";
 
 const MenuBtn = styled(IconButton)`
-  @media (min-width: 600px) {
+  @media (min-width: 801px) {
     display: none;
   }
 `;

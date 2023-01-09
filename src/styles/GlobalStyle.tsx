@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         line-height: 120%;
     }
+    body {
+        min-width: 320px;
+    }
 `;
 
 export default GlobalStyle;

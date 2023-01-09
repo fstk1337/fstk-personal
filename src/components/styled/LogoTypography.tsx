@@ -1,8 +1,9 @@
 import { styled } from "@mui/material/styles";
-import { Typography } from "..";
+import { Typography } from "../../mui";
 
 const LogoTypography = styled(Typography)`
-  @media (max-width: 768px) {
+  color: #000;
+  @media (max-width: 599px) {
     display: none;
   }
 `;
