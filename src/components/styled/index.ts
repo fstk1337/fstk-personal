@@ -9,6 +9,7 @@ import ContactBtn from "./ContactBtn";
 import InfoDrawer from "./InfoDrawer";
 import InfoItemText from "./InfoItemText";
 import MenuDrawer from "./MenuDrawer";
+import AppNavLink from "./AppNavLink";
 
 export {
     LogoBtn,
@@ -21,5 +22,6 @@ export {
     ContactBtn,
     InfoDrawer,
     InfoItemText,
-    MenuDrawer
+    MenuDrawer,
+    AppNavLink
 };

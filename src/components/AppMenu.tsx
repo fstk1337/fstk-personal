@@ -1,6 +1,7 @@
 import { FC } from "react";
-import { Icon, ListItemIcon, ListItemText, Menu, MenuItem, MenuList } from "../mui";
+import { Icon, ListItemIcon, ListItemText, Link, Menu, MenuItem } from "../mui";
 import { GitHubIcon, InstagramIcon, LinkedInIcon, TelegramIcon } from "../mui/icons";
+import { styled } from '@mui/material/styles';
 import SkypeIcon from "./icon/SkypeIcon";
 import VKIcon from "./icon/VKIcon";
 
@@ -9,6 +10,19 @@ interface AppMenuProps {
     open: boolean;
     onClose: EventListener;
 }
+
+const MyMenu = styled(Menu)`
+    & .MuiPaper-root.MuiPopover-paper {
+      top: 65px;
+      left: 1240px;
+      width: auto;
+    }
+`;
+
+const MyLink = styled(Link)`
+  display: inline-flex;
+  text-decoration: none;
+`;
 
 const socials = [
   {
@@ -21,7 +35,7 @@ const socials = [
     icon: <SkypeIcon />,
     type: 'Skype',
     text: 'Skype',
-    href: 'skype:vit_shvaichuk'
+    href: 'skype:vit_shvaichuk?chat'
   },
   {
     icon: <GitHubIcon />,
@@ -52,27 +66,27 @@ const socials = [
 const AppMenu: FC<AppMenuProps> = (props) => {
 
     return (
-        <Menu
-        id="basic-menu"
-        anchorEl={props.anchorEl}
-        open={props.open}
-        onClose={props.onClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
+      <MyMenu
+      id="basic-menu"
+      anchorEl={props.anchorEl}
+      open={props.open}
+      onClose={props.onClose}
+      MenuListProps={{
+        'aria-labelledby': 'basic-button'
+      }}
       >
-      <MenuList>
-        { socials.map((item, index) => {
-          return (
-          <MenuItem key={item.type}>
-            <ListItemIcon>
-              <Icon children={item.icon}/>
-            </ListItemIcon>
-            <ListItemText>{item.text}</ListItemText>
-          </MenuItem>
-        )})}
-      </MenuList>
-      </Menu>
+          { socials.map((item, index) => {
+            return (
+            <MenuItem key={item.type}>
+              <MyLink href={item.href} target="_blank">
+                <ListItemIcon>
+                  <Icon children={item.icon}/>
+                </ListItemIcon>
+                <ListItemText>{item.text}</ListItemText>
+              </MyLink>
+            </MenuItem>
+          )})}
+      </MyMenu>
     );
 }
 

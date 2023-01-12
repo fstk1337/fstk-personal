@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 120%;
     }
     body {
-        min-width: 320px;
+        min-width: 240px;
     }
 `;
 
