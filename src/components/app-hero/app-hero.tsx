@@ -13,18 +13,13 @@ export const AppHero = () => {
                     </div>
                     <TypeWriter
                         options={{
-                            strings: [
-                                'Developer',
-                                'Dreamer',
-                                'Achiever'
-                            ],
+                            strings: ['Dreamer', 'Achiever', 'Developer'],
                             autoStart: true,
                             delay: 75,
                             loop: true
                         }}
                     />
                 </div>
-                
             </div>
         </section>
     );
