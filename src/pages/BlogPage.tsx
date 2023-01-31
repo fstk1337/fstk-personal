@@ -1,7 +1,9 @@
-import App from '../App';
-
-function BlogPage() {
-    return <App text='Blog' />;
-}
+const BlogPage = () => (
+    <>
+        <center>
+            <h2>Blog Page</h2>
+        </center>
+    </>
+);
 
 export default BlogPage;

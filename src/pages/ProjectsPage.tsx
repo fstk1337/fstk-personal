@@ -1,7 +1,9 @@
-import App from '../App';
-
-function ProjectsPage() {
-    return <App text='Projects' />;
-}
+const ProjectsPage = () => (
+    <>
+        <center>
+            <h2>Projects Page</h2>
+        </center>
+    </>
+);
 
 export default ProjectsPage;
