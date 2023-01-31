@@ -7,19 +7,24 @@ export const AppHero = () => {
         <section id='hero' className='d-flex flex-column justify-content-center align-items-center'>
             <div className='hero-container' data-aos='fade-in'>
                 <h1>Vitali Shvaichuk</h1>
-                <TypeWriter
-                    options={{
-                        strings: [
-                            "I'm Designer",
-                            "I'm Developer",
-                            "I'm Freelancer",
-                            "I'm Photographer"
-                        ],
-                        autoStart: true,
-                        delay: 75,
-                        loop: true
-                    }}
-                />
+                <div className='me-typed'>
+                    <div className='Typewriter'>
+                        <span>I&apos;m&nbsp;</span>
+                    </div>
+                    <TypeWriter
+                        options={{
+                            strings: [
+                                'Developer',
+                                'Dreamer',
+                                'Achiever'
+                            ],
+                            autoStart: true,
+                            delay: 75,
+                            loop: true
+                        }}
+                    />
+                </div>
+                
             </div>
         </section>
     );

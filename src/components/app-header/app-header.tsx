@@ -13,19 +13,19 @@ export const AppHeader = () => (
                     <a href='index.html'>Vitali Shvaichuk</a>
                 </h1>
                 <div className='social-links mt-3 text-center'>
-                    <a href='#' className='twitter'>
+                    <a href='https://twitter.com/fstk1337' target='_blank' className='twitter' rel="noreferrer">
                         <i className='bx bxl-twitter'></i>
                     </a>
-                    <a href='#' className='facebook'>
+                    <a href='https://www.facebook.com/fstk1337' target='_blank' className='facebook' rel="noreferrer">
                         <i className='bx bxl-facebook'></i>
                     </a>
-                    <a href='#' className='instagram'>
+                    <a href='https://www.instagram.com/fstk1337' target='_blank' className='instagram' rel="noreferrer">
                         <i className='bx bxl-instagram'></i>
                     </a>
-                    <a href='#' className='google-plus'>
+                    <a href='skype:vit_shvaichuk?chat' target='_blank' className='skype' rel="noreferrer">
                         <i className='bx bxl-skype'></i>
                     </a>
-                    <a href='#' className='linkedin'>
+                    <a href='https://www.linkedin.com/in/fstk1337' target='_blank' className='linkedin' rel="noreferrer">
                         <i className='bx bxl-linkedin'></i>
                     </a>
                 </div>
@@ -34,32 +34,32 @@ export const AppHeader = () => (
             <nav id='navbar' className='nav-menu navbar'>
                 <ul>
                     <li>
-                        <a href='#hero' className='nav-link scrollto active'>
+                        <a href='#' className='nav-link scrollto active'>
                             <i className='bx bx-home'></i> <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href='#about' className='nav-link scrollto'>
+                        <a href='#' className='nav-link scrollto'>
                             <i className='bx bx-user'></i> <span>About</span>
                         </a>
                     </li>
                     <li>
-                        <a href='#resume' className='nav-link scrollto'>
+                        <a href='#' className='nav-link scrollto'>
                             <i className='bx bx-file-blank'></i> <span>Resume</span>
                         </a>
                     </li>
                     <li>
-                        <a href='#portfolio' className='nav-link scrollto'>
+                        <a href='#' className='nav-link scrollto'>
                             <i className='bx bx-book-content'></i> <span>Portfolio</span>
                         </a>
                     </li>
                     <li>
-                        <a href='#services' className='nav-link scrollto'>
+                        <a href='#' className='nav-link scrollto'>
                             <i className='bx bx-server'></i> <span>Services</span>
                         </a>
                     </li>
                     <li>
-                        <a href='#contact' className='nav-link scrollto'>
+                        <a href='#' className='nav-link scrollto'>
                             <i className='bx bx-envelope'></i> <span>Contact</span>
                         </a>
                     </li>
