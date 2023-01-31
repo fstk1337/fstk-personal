@@ -7,21 +7,23 @@ import { FC } from 'react';
 import { Container } from './mui';
 
 interface AppProps {
-  text: string
+    text: string;
 }
 
-const App:FC<AppProps> = (props) => {
-  return (
-    <>
-      <GlobalStyle />
-      <ThemeProvider theme={MainTheme}>
-        <AppHeader />
-        <Container maxWidth="lg"> 
-          <center><h2>{ props.text } Page</h2></center>
-        </Container>
-      </ThemeProvider>
-    </>
-  );
-}
+const App: FC<AppProps> = (props) => {
+    return (
+        <>
+            <GlobalStyle />
+            <ThemeProvider theme={MainTheme}>
+                <AppHeader />
+                <Container maxWidth='lg'>
+                    <center>
+                        <h2>{props.text} Page</h2>
+                    </center>
+                </Container>
+            </ThemeProvider>
+        </>
+    );
+};
 
 export default App;

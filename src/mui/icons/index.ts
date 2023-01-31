@@ -20,4 +20,4 @@ export {
     TelegramIcon,
     ArrowDropDownRoundedIcon,
     SvgIcon
-}
+};

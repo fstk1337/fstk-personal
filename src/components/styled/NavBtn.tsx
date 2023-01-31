@@ -1,7 +1,6 @@
-import { styled } from "@mui/material/styles";
-import { Button } from "../../mui";
+import { styled } from '@mui/material/styles';
+import { Button } from '../../mui';
 
-const NavBtn = styled(Button)`
-`;
+const NavBtn = styled(Button)``;
 
 export default NavBtn;
