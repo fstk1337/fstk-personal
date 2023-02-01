@@ -1,9 +1,9 @@
-import App from '../App';
-
-function HomePage() {
-  return (
-    <App text="Home" />
-  )
-}
+const HomePage = () => (
+    <>
+        <center>
+            <h2>Home Page</h2>
+        </center>
+    </>
+);
 
 export default HomePage;
