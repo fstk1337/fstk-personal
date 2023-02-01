@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 
-import AppFooter from '../app-footer';
-import AppHeader from '../app-header';
-import AppHero from '../app-hero';
-import MobileNav from '../mobile-nav';
+import AppFooter from '@/components/app-footer';
+import AppHeader from '@/components/app-header';
+import AppHero from '@/components/app-hero';
+import MobileNav from '@/components/mobile-nav';
 
 import './app-layout.scss';
 

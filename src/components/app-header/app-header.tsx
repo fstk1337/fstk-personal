@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
+
+import profileImage from '@/assets/img/profile-img.png';
+import resume from '@/assets/SHVAICHUK_CV.pdf';
+
 import './app-header.scss';
 
 export const AppHeader = () => (
     <header id='header' className='header'>
         <div className='d-flex flex-column'>
             <div className='profile'>
-                <img
-                    src='src/assets/img/profile-img.png'
-                    alt=''
-                    className='img-fluid rounded-circle'
-                />
+                <img src={profileImage} alt='avatar' className='img-fluid rounded-circle' />
                 <h1 className='text-light'>
                     <Link to='/'>Vitali Shvaichuk</Link>
                 </h1>
@@ -70,7 +70,7 @@ export const AppHeader = () => (
                         </a>
                     </li>
                     <li>
-                        <a href='#' className='nav-link scrollto disabled'>
+                        <a href={resume} className='nav-link scrollto'>
                             <i className='bx bx-file-blank'></i> <span>Resume</span>
                         </a>
                     </li>

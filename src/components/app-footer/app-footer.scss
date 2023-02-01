@@ -12,6 +12,16 @@
   
   #footer .copyright {
     text-align: center;
+    svg {
+      text-align: left;
+      width: 80px;
+      height: 15px;
+      margin-bottom: 6px;
+      transition: .2s ease-in;
+      &:hover path {
+        fill: #fff;
+      }
+    }
   }
   
   #footer .credits {
