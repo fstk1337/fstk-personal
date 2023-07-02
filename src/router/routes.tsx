@@ -1,3 +1,4 @@
+import React from 'react';
 import { createRoutesFromElements, Route } from 'react-router-dom';
 
 import HomePage from '@/pages/HomePage';
@@ -6,11 +7,13 @@ import BlogPage from '@/pages/BlogPage';
 import AppLayout from '@/components/app-layout';
 
 const routes = createRoutesFromElements(
-    <Route path='/' element={<AppLayout />}>
-        <Route index element={<HomePage />} />
+    <React.Fragment>
+        <Route path='/' element={<AppLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path='projects' element={<ProjectsPage />} />
+        </Route>
         <Route path='/blog' element={<BlogPage />} />
-        <Route path='/projects' element={<ProjectsPage />} />
-    </Route>
+    </React.Fragment>
 );
 
 export default routes;
