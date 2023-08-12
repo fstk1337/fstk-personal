@@ -22,17 +22,19 @@ const BlogPage = () => {
     };
 
     const login = async () => {
-        const response = await api.auth.login({ email, password });
+        const response = await api.auth.login({
+            email, password 
+        });
         if (response.status === 200) {
             setLoggedIn(true);
             localStorage.setItem('token', response.data.token);
         }
-    }
+    };
 
     const logout = () => {
         localStorage.removeItem('token');
         setLoggedIn(false);
-    }
+    };
 
     useEffect(() => {
         const token = localStorage.getItem('token');
