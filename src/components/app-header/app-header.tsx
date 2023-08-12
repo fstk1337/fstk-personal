@@ -65,8 +65,8 @@ export const AppHeader = () => (
                         </Link>
                     </li>
                     <li>
-                        <a href='#' className='nav-link scrollto disabled'>
-                            <i className='bx bx-user'></i> <span>About</span>
+                        <a href='/blog' className='nav-link scrollto'>
+                            <i className='bx bx-user'></i> <span>Blog</span>
                         </a>
                     </li>
                     <li>
