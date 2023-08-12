@@ -19,7 +19,7 @@ const userInstance = axios.create({
     }
 });
 
-userInstance.interceptors.request.use(req => {
+userInstance.interceptors.request.use((req) => {
     const token = localStorage.getItem('token');
     if (token) {
         req.headers.Authorization = `Bearer ${token}`;
@@ -37,7 +37,7 @@ const postInstance = axios.create({
     }
 });
 
-postInstance.interceptors.request.use(req => {
+postInstance.interceptors.request.use((req) => {
     const token = localStorage.getItem('token');
     if (token) {
         req.headers.Authorization = `Bearer ${token}`;

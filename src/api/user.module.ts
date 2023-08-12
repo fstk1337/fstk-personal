@@ -10,13 +10,20 @@ const userModule = (user: AxiosInstance) => ({
         return user.get(`${URL}/${id}`);
     },
     createUser(payload: {
-    nickname: string; password: string; firstName: string; lastName: string;
-  }) {
+        nickname: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+    }) {
         return user.post(URL, payload);
     },
     updateUser(payload: {
-    id: number; nickname: string; password: string; firstName: string; lastName: string;
-  }) {
+        id: number;
+        nickname: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+    }) {
         return user.put(URL, payload);
     },
     deleteUser(id: string) {

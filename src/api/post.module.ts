@@ -12,14 +12,16 @@ const postModule = (post: AxiosInstance) => ({
     getOnePost(id: string) {
         return post.get(`${URL}/${id}`);
     },
-    createPost(payload: {
-    title: string; date: string; content: string; userId: string;
-  }) {
+    createPost(payload: { title: string; date: string; content: string; userId: string }) {
         return post.post(URL, payload);
     },
     updatePost(payload: {
-    id: number; title: string; date: string; content: string; userId: string;
-  }) {
+        id: number;
+        title: string;
+        date: string;
+        content: string;
+        userId: string;
+    }) {
         return post.put(URL, payload);
     },
     deletePost(id: string) {

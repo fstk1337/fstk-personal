@@ -1,0 +1,45 @@
+.blog-header {
+  display: flex;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-logo h2 {
+  margin: 0;
+}
+
+.user-info .first-name {
+  margin-right: 5px;
+}
+
+.user-info .last-name {
+  margin-right: 20px;
+}
+
+.blog-header button {
+  border: 0;
+  background-color: #bbb;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.input {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.email-input {
+  margin-right: 10px;
+}
+
+.login-btn {
+  margin-left: 20px;
+}
+
+.cancel-btn {
+  margin-left: 5px;
+}

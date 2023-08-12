@@ -1,0 +1,20 @@
+.blog-content {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  margin-bottom: 40px;
+}
+
+.post-item:last-child {
+  margin-bottom: 0;
+}
