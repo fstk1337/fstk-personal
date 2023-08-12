@@ -1,29 +1,8 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 
 import api from '@/api';
-
-interface User {
-    id: number;
-    email: string;
-    nickname: string;
-    password: string;
-    first_name: string;
-    last_name: string;
-    is_admin: boolean;
-}
-
-interface Post {
-    id: number;
-    title: string;
-    date: string;
-    content: string;
-    user: {
-        email: string;
-        nickname: string;
-        first_name: string;
-        last_name: string;
-    };
-}
+import { User } from '@/models/User';
+import { Post } from '@/models/Post';
 
 const BlogPage = () => {
     const [loggedIn, setLoggedIn] = useState(false);
