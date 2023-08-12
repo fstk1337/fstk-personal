@@ -1,8 +1,9 @@
 import axios from 'axios';
 
+const HOST = 'http://fstk1337.link';
 
 const authInstance = axios.create({
-    baseURL: 'http://localhost:8000/auth',
+    baseURL: `${HOST}/auth`,
     withCredentials: false,
     headers: {
         Accept: 'application/json',
@@ -11,7 +12,7 @@ const authInstance = axios.create({
 });
 
 const userInstance = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: `${HOST}/api`,
     withCredentials: false,
     headers: {
         Accept: 'application/json'
@@ -29,7 +30,7 @@ userInstance.interceptors.request.use(req => {
 });
 
 const postInstance = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: `${HOST}/api`,
     withCredentials: false,
     headers: {
         Accept: 'application/json'
